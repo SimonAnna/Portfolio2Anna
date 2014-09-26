@@ -51,6 +51,7 @@ border-width:0px;
 img{
  width:200px;
  hight:auto;
+
 }
 .col-xs-3{
 padding:0px;
@@ -67,4 +68,10 @@ body{
 }
 .col-xs-4{
     border:0px;
+}
+.align{
+    padding-right:40px
+}
+.styleB{
+    color:cadetblue;
 }

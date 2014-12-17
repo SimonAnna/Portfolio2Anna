@@ -75,3 +75,7 @@ body{
 .styleB{
     color:cadetblue;
 }
+.jumbotron {
+    color:red;
+     background-image: url('http://www.psdgraphics.com/file/black-wood-background.jpg');
+}

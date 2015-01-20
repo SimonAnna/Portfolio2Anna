@@ -8,49 +8,50 @@ $("document").ready(function() {
     $("#addAPara").bind("click", addAPara);
     $("#removeAPara").bind("click", removeAPara);
     
-//$("#hideLogo").bind("click", hideTheImage);
-//
-//$("#showLogo").bind("click", showTheImage);
+$("#hideLogo").bind("click", hideTheImage);
+
+$("#showLogo").bind("click", showTheImage);
 
 $("#toggleText").bind("click", toggleTheText);
 
-//$("#fadeLogo").bind("click", fadeTheImage);
+$("#fadeLogo").bind("click", fadeTheImage);
 
-//$("#fadeALittle").bind("click", fadeALittle);
+$("#fadeALittle").bind("click", fadeALittle);
 
-//$("#fullOpacity").bind("click", fullOpacityImage);
+$("#fullOpacity").bind("click", fullOpacityImage);
 
 $("#slideAway").bind("click", slideTheImage);
 
 $("#slideBack").bind("click", unslideTheImage);
 
-//$("#customAnim").bind("click", customAnimate);
+$("#customAnim").bind("click", customAnimate);
 
-//$("#shakeLogo").bind("click", shakeLogo);
+$("#shakeLogo").bind("click", shakeLogo);
 
-//$("#bounceLogo").bind("click", bounceLogo);
+$("#bounceLogo").bind("click", bounceLogo);
 
-//$("#highlightLogo").bind("click", highlightLogo);
+$("#highlightLogo").bind("click", highlightLogo);
 
-//$("#pulsateLogo").bind("click", pulsateLogo);
+$("#pulsateLogo").bind("click", pulsateLogo);
 
-//$("#sizeLogo").bind("click", sizeLogo);
+$("#sizeLogo").bind("click", sizeLogo);
 
+$("#superHumans").accordion({header: "h5"});
 
 });
 
-//function hideTheImage() {
-//
-//$("#logo").hide('puff',{}, 2500);
-//}
-//
-// 
-//
-//function showTheImage() {
-//
-//$("#logo").show("fold", {}, 2500);
-//
-//}
+function hideTheImage() {
+
+$("#logo").hide('puff',{}, 2500);
+}
+
+ 
+
+function showTheImage() {
+
+$("#logo").show("fold", {}, 2500);
+
+}
 
 
 function toggleTheText()
@@ -63,27 +64,27 @@ $("h4").toggle(2500);
 
  
 
-//function fadeTheImage() {
-//
-//$("#logo").fadeOut(2500);
-//
-//}
-//
-// 
-//
-//function fadeALittle() {
-//
-//$("#logo").fadeTo(2500,.30);
-//
-//}
-//
-// 
-//
-//function fullOpacityImage() {
-//
-//$("#logo").fadeTo(2500,1);
-//
-//}
+function fadeTheImage() {
+
+$("#logo").fadeOut(2500);
+
+}
+
+ 
+
+function fadeALittle() {
+
+$("#logo").fadeTo(2500,.30);
+
+}
+
+ 
+
+function fullOpacityImage() {
+
+$("#logo").fadeTo(2500,1);
+
+}
 
  
 
@@ -101,51 +102,51 @@ $("#second").slideDown(2500);
 
 }
 
-//function customAnimate() {
-//
-//$("#logo").animate({opacity: 0.25, height: "150px"}, 2000, "easeOutBounce");
-//
-//}
-//
-// 
-//
-//function shakeLogo() {
-//
-//$("#logo").effect("shake", {times:5, direction:"down", distance: 10}, 200);
-//
-//}
-//
-// 
-//
-//function bounceLogo() {
-//
-//$("#logo").effect("bounce", {times:5, direction:"up", distance: 10}, 200);
-//
-//}
-//
-// 
-//
-//function highlightLogo() {
-//
-//$("h3").effect("highlight", {color: "purple"}, 500);
-//
-//}
-//
-// 
-//
-//function pulsateLogo() {
-//
-//$("#logo").effect("pulsate", {times:5}, 200);
-//
-//}
-//
-// 
-//
-//function sizeLogo() {
-//
-//$("#logo").effect("size", { to: {height: 350, width: 350}}, 200);
-//
-//}
+function customAnimate() {
+
+$("#logo").animate({opacity: 0.25, height: "150px"}, 2000, "easeOutBounce");
+
+}
+
+ 
+
+function shakeLogo() {
+
+$("#logo").effect("shake", {times:5, direction:"down", distance: 10}, 200);
+
+}
+
+ 
+
+function bounceLogo() {
+
+$("#logo").effect("bounce", {times:5, direction:"up", distance: 10}, 200);
+
+}
+
+ 
+
+function highlightLogo() {
+
+$("h3").effect("highlight", {color: "purple"}, 500);
+
+}
+
+ 
+
+function pulsateLogo() {
+
+$("#logo").effect("pulsate", {times:5}, 200);
+
+}
+
+ 
+
+function sizeLogo() {
+
+$("#logo").effect("size", { to: {height: 350, width: 350}}, 200);
+
+}
 
 
 function addAPara() {

@@ -3,6 +3,7 @@
         <title>Anna Simon Portfolio website :3</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
         <link type="text/css" rel="stylesheet" href="css/custom-style.css">
@@ -15,74 +16,100 @@ data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle
 
 
     <div class="container">
-        <h1>Bootstrap things :3</h1>
-        <p>here is a little page about some cool bootstrap options</p>
+        <h1>jQuery stuff :3</h1>
+        <h4>here is a little page about some cool jQuery options</h4>
         <div class="row">
            <div class="col-xs-10">
         <div class="row">
-            <h2>jumbotron</h2>
-           <div class="jumbotron">
-  <h1>Hey!</h1>
-  <p>this is a jumbotron(the button does not work don't even try)</p>
-  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
-</div>
-            <h2>Nav Bar(with dropdown)</h2>
-           <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+            <h2>altering an item's sibling</h2>
+           <p id="p">yo look these two lines are different i bet i just blew your mind</p>
+           <p id="p2"> these two lines are called siblings, using the normal css (see technology page) it would take way more time<br /> effort, and code to pull this off</p>
+            <h2>playing with event handlers</h2>
+            <h3>Alert on click</h3>
+         <button id="oneButton" type="button">Click Me!</button>
+         <h1 id="h1">Hover over me to see the lines above me change!</h1>
          <div class="row">
-             Models
-              <!-- Button trigger modal -->
+             <h2>  adding, removing, and changing the HTML(press the buttons and have fun) </h2>
+             <h3 id="h3Tag">Yo look an h3 tag</h3>
+             
+            <div id="randPara">
+
+<p id="firstP">The first paragraph<p>
+
+</div>
+ <button type="button" id="addAPara">Add Text</button>
+
+<button type="button" id="removeAPara">Remove Text</button>
+
+<button type="button" id="replaceWHtml">Replace w/ HTML</button>
+
+<button type="button" id="replaceWText">Replace w/ Text</button>
+<h3>Playing with Animation’s</h3>
+
+ 
+
+
+
+<img src='http://www.blogcdn.com/www.pawnation.com/media/2013/10/wc.jpg' id="logo"  >
+
+
+
+<br />
+
+ 
+
+<div>
+
+<h4>Message 1</h4>
+
+<h4 style="display: none">Message 2</h4>
+
+</div>
+
+ 
+
+<div>
+
+<p id="second">Here today, gone in a click!</p>
+
+<p id="third">Waiting for Change</p>
+
+</div>
+
+ 
+
+<br />
+
+<button type="button" id="hideLogo">Hide the Logo</button>
+
+<button type="button" id="showLogo">Show the Logo</button>
+
+<button type="button" id="fadeLogo">Fade the Logo</button>
+
+<button type="button" id="fadeALittle">Fade a Little</button>
+
+<button type="button" id="fullOpacity">Full Opacity</button>
+
+<button type="button" id="toggleText">Toggle the Text</button>
+
+<button type="button" id="slideAway">Slide away Text</button>
+
+<button type="button" id="slideBack">Slide Text Back</button>
+
+<button type="button" id="customAnim">Custom Animation</button>
+
+<button type="button" id="shakeLogo">Shake Logo</button>
+
+<button type="button" id="bounceLogo">Bounce Logo</button>
+
+<button type="button" id="highlightLogo">Highlight Logo</button>
+
+<button type="button" id="pulsateLogo">Pulsate Logo</button>
+
+<button type="button" id="sizeLogo">Size Logo</button>
+
+             
+             <!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Model
 </button>
@@ -119,12 +146,13 @@ data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle
               <a  class=list-group-item href="index.html">About me :3</a>
               <a  class=list-group-item href="projects.html">Projects :3</a>
               <a  class=list-group-item href="technology.html">Technology :3</a> 
-              <a  class=list-group-item id="current-link"href="more.html">More :3</a> 
-              <a  class=list-group-item href="jquery.html">jQuery stuff :3</a>
+              <a  class=list-group-item href="more.html">More :3</a> 
+              <a  class=list-group-item id="current-link" href="jquery.html">jQuery stuff :3</a>
               </nav>
            </div>  
         </div>
-    </div>   
+    </div>
+<script type="text/javascript" src="scripts.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
        <script src="js/bootstrap.min.js"></script>
   </body>

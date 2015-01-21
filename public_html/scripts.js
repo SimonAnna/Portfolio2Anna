@@ -1,12 +1,13 @@
 $("document").ready(function() {
+   /*changes to get the first p and second p to be different*/
     $('#p').css("background-color", "blue");
     
     $('#p2').css("background-color", "red");
-    
+    /*for alerts when clicked*/
     $('#oneButton').bind('click', alertButtonClick);
-    
+    /*for hovering*/
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
-    
+    /*changing texts*/
     $("#replaceWHtml").bind("click", replaceWHtml);
     
     $("#replaceWText").bind("click", replaceWText);
@@ -14,7 +15,7 @@ $("document").ready(function() {
     $("#addAPara").bind("click", addAPara);
     
     $("#removeAPara").bind("click", removeAPara);
-
+    /*animations for logo and text*/
     $("#hideLogo").bind("click", hideTheImage);
 
     $("#showLogo").bind("click", showTheImage);
@@ -42,25 +43,27 @@ $("document").ready(function() {
     $("#pulsateLogo").bind("click", pulsateLogo);
 
     $("#sizeLogo").bind("click", sizeLogo);
-
+    /*accordion*/
     $("#superHumans").accordion({header: "h5"});
 
 });
+/*FUNctions(they arnt that fun)*/
 
+/*hidding the image in a "puff"*/
 function hideTheImage() {
 
     $("#logo").hide('puff', {}, 2500);
 }
 
 
-
+/*showing the image in a "fold"*/
 function showTheImage() {
 
     $("#logo").show("fold", {}, 2500);
 
 }
 
-
+/*changes the text from one thing to another*/
 function toggleTheText()
 
 {
@@ -70,7 +73,7 @@ function toggleTheText()
 }
 
 
-
+/*different animations*/
 function fadeTheImage() {
 
     $("#logo").fadeOut(2500);
@@ -133,14 +136,6 @@ function bounceLogo() {
 
 
 
-function highlightLogo() {
-
-    $("h3").effect("highlight", {color: "purple"}, 500);
-
-}
-
-
-
 function pulsateLogo() {
 
     $("#logo").effect("pulsate", {times: 5}, 200);
@@ -156,6 +151,15 @@ function sizeLogo() {
 }
 
 
+//highlights the text above logo
+function highlightLogo() {
+
+    $("h3").effect("highlight", {color: "purple"}, 500);
+
+}
+
+
+//functions for adding,changing,and deleting text and html
 function addAPara() {
     $("#randPara").append("<p>A WILD PARAGRAPH APPEARS</p>");
 
@@ -172,6 +176,8 @@ function replaceWText() {
     $("#h3Tag").text("<h6>Now im an h6 in text</h6>");
 
 }
+//functions for what happens when you put your mouse over or not over a certain thing
+//mouse over or mouse out there is no between
 function mouseOverMe() {
     $("#h1").html("MouseOn");
     $("#p").html("nyannyannyannyan :3 nyannyannyannyan");
@@ -184,6 +190,7 @@ function mouseOutMe() {
     $("#p2").html("these two lines are called siblings, using the normal css (see technology page) it would take way more time<br /> effort, and code to pull this off");
 
 }
+//an alert that pops up when you push a button
 function alertButtonClick() {
     alert("you clicked a button yay you are relatively smart");
 }

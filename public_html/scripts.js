@@ -1,7 +1,7 @@
 $("document").ready(function() {
-   /*changes to get the first p and second p to be different*/
+    /*changes to get the first p and second p to be different*/
     $('#p').css("background-color", "blue");
-    
+
     $('#p2').css("background-color", "red");
     /*for alerts when clicked*/
     $('#oneButton').bind('click', alertButtonClick);
@@ -9,11 +9,11 @@ $("document").ready(function() {
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     /*changing texts*/
     $("#replaceWHtml").bind("click", replaceWHtml);
-    
+
     $("#replaceWText").bind("click", replaceWText);
-    
+
     $("#addAPara").bind("click", addAPara);
-    
+
     $("#removeAPara").bind("click", removeAPara);
     /*animations for logo and text*/
     $("#hideLogo").bind("click", hideTheImage);
@@ -54,15 +54,12 @@ function hideTheImage() {
 
     $("#logo").hide('puff', {}, 2500);
 }
-
-
 /*showing the image in a "fold"*/
 function showTheImage() {
 
     $("#logo").show("fold", {}, 2500);
 
 }
-
 /*changes the text from one thing to another*/
 function toggleTheText()
 
@@ -71,99 +68,78 @@ function toggleTheText()
     $("h4").toggle(2500);
 
 }
-
-
 /*different animations*/
 function fadeTheImage() {
 
     $("#logo").fadeOut(2500);
 
 }
-
-
-
+//drops opacity/fades
 function fadeALittle() {
 
     $("#logo").fadeTo(2500, .30);
 
 }
-
-
-
+//full view
 function fullOpacityImage() {
 
     $("#logo").fadeTo(2500, 1);
 
 }
-
-
-
+//slides away
 function slideTheImage() {
 
     $("#second").slideUp(2500);
 
 }
-
-
-
+//slides it back
 function unslideTheImage() {
 
     $("#second").slideDown(2500);
 
 }
-
+//i dont know how to explain this :? WH4T N0W?
 function customAnimate() {
 
     $("#logo").animate({opacity: 0.25, height: "150px"}, 2000, "easeOutBounce");
 
 }
-
-
-
+//shakes the pic
 function shakeLogo() {
 
     $("#logo").effect("shake", {times: 5, direction: "down", distance: 10}, 200);
 
 }
-
-
-
+//bounce
 function bounceLogo() {
 
     $("#logo").effect("bounce", {times: 5, direction: "up", distance: 10}, 200);
 
 }
-
-
-
+//pulsate(get a rave up in here :3)
 function pulsateLogo() {
 
     $("#logo").effect("pulsate", {times: 5}, 200);
 
 }
-
-
-
+//resizes the pic(kinda glitchy)
 function sizeLogo() {
 
     $("#logo").effect("size", {to: {height: 350, width: 350}}, 200);
 
 }
-
-
 //highlights the text above logo
 function highlightLogo() {
 
     $("h3").effect("highlight", {color: "purple"}, 500);
 
 }
-
-
-//functions for adding,changing,and deleting text and html
+//functions for adding,changing,and deleting text and html(A WILD PARAGRAPH APPEARS)
 function addAPara() {
     $("#randPara").append("<p>A WILD PARAGRAPH APPEARS</p>");
 
 }
+//removes a paragraph, kinda explains itself
 function removeAPara() {
     $("#randPara p:last").remove();
 

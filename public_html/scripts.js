@@ -46,7 +46,7 @@ $("document").ready(function() {
     /*accordion*/
     $("#superHumans").accordion({header: "h5"});
     //background
-    $("#body").css({"background-image": "url(http://stream1.gifsoup.com/view3/4608717/joel-faviere-dontyoudareforgetthesun-o.gif)"})
+    $("#body").css({"background-image": "url(http://youtu.be/ZwTfmCgnL_0)"})
             .css("background-size", "1302,5000");
 });
 /*FUNctions(they arnt that fun)*/

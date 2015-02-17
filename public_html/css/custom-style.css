@@ -79,3 +79,12 @@ body{
     color:red;
      background-image: url('http://www.psdgraphics.com/file/black-wood-background.jpg');
 }
+.bgvideo{
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-hight:100%;
+    width:auto;
+    hight:auto;
+}
